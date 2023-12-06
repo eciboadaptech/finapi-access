@@ -1,0 +1,10 @@
+# # BankInterfaceTppAuthenticationGroup
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **int** | TPP Authentication Group ID |
+**name** | **string** | TPP Authentication Group name |
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

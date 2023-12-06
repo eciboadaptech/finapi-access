@@ -1,0 +1,14 @@
+# # AccountInterface
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**banking_interface** | [**\OpenAPI\Client\Model\BankingInterface**](BankingInterface.md) |  |
+**status** | [**\OpenAPI\Client\Model\AccountStatus**](AccountStatus.md) |  |
+**capabilities** | [**AccountCapability[]**](AccountCapability.md) | List of account capabilities that this interface supports. Possible values are:&lt;br/&gt;&amp;bull; &lt;code&gt;DATA_DOWNLOAD&lt;/code&gt; - download of balance and transactions/securities&lt;br/&gt;&amp;bull; &lt;code&gt;IBAN_ONLY_SEPA_MONEY_TRANSFER&lt;/code&gt; - money transfer where the recipient&#39;s account is defined just by the IBAN&lt;br/&gt;&amp;bull; &lt;code&gt;IBAN_ONLY_SEPA_DIRECT_DEBIT&lt;/code&gt; - direct debit where the debitor&#39;s account is defined just by the IBAN&lt;br/&gt;&amp;bull; &lt;code&gt;SEPA_MONEY_TRANSFER&lt;/code&gt; - single money transfer&lt;br/&gt;&amp;bull; &lt;code&gt;SEPA_COLLECTIVE_MONEY_TRANSFER&lt;/code&gt; - collective money transfer&lt;br/&gt;&amp;bull; &lt;code&gt;SEPA_BASIC_DIRECT_DEBIT&lt;/code&gt; - single basic direct debit&lt;br/&gt;&amp;bull; &lt;code&gt;SEPA_BASIC_COLLECTIVE_DIRECT_DEBIT&lt;/code&gt; - collective basic direct debit&lt;br/&gt;&amp;bull; &lt;code&gt;SEPA_B2B_DIRECT_DEBIT&lt;/code&gt; - single Business-To-Business direct debit&lt;br/&gt;&amp;bull; &lt;code&gt;SEPA_B2B_COLLECTIVE_DIRECT_DEBIT&lt;/code&gt; - collective Business-To-Business direct debit&lt;br/&gt;&lt;br/&gt;Note that this list may be empty if the interface is not supporting any of the above capabilities. Also note that the list may be refreshed each time the account is being updated through this interface, so available capabilities may get added or removed in the course of an account update.&lt;br/&gt; &lt;strong&gt;Type:&lt;/strong&gt; AccountCapability |
+**payment_capabilities** | [**\OpenAPI\Client\Model\AccountInterfacePaymentCapabilities**](AccountInterfacePaymentCapabilities.md) |  |
+**last_successful_update** | **\DateTime** | &lt;strong&gt;Format:&lt;/strong&gt; &#39;YYYY-MM-DD&#39;T&#39;HH:MM:SS.SSSXXX&#39; (RFC 3339, section 5.6)&lt;br/&gt;Timestamp of when the account was last successfully updated using this interface (or initially imported); more precisely: time when the account data (balance and positions) has been stored into the finAPI databases. | [optional]
+**last_update_attempt** | **\DateTime** | &lt;strong&gt;Format:&lt;/strong&gt; &#39;YYYY-MM-DD&#39;T&#39;HH:MM:SS.SSSXXX&#39; (RFC 3339, section 5.6)&lt;br/&gt;Timestamp of when the account was last tried to be updated using this interface (or initially imported); more precisely: time when the update (or initial import) was triggered. | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
