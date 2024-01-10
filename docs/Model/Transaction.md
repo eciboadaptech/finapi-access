@@ -42,6 +42,8 @@ Name | Type | Description | Notes
 **compensation_amount** | **float** | Compensation Amount. Sum of reimbursement of out-of-pocket expenses plus processing brokerage in case of a national return / refund debit as well as an optional interest equalisation. Exists predominantly for SEPA direct debit returns. | [optional]
 **original_amount** | **float** | Original Amount of the original direct debit. Exists predominantly for SEPA direct debit returns. | [optional]
 **original_currency** | [**\OpenAPI\Client\Model\Currency**](Currency.md) |  | [optional]
+**fee_amount** | **float** | Amount of the transaction fee. Some banks charge a specific fee per transaction. Only returned by a few banks. | [optional]
+**fee_currency** | [**\OpenAPI\Client\Model\Currency**](Currency.md) |  | [optional]
 **different_debitor** | **string** | Payer&#39;s/debtor&#39;s reference party (in the case of a credit transfer) or payee&#39;s/creditor&#39;s reference party (in the case of a direct debit) | [optional]
 **different_creditor** | **string** | Payee&#39;s/creditor&#39;s reference party (in the case of a credit transfer) or payer&#39;s/debtor&#39;s reference party (in the case of a direct debit) | [optional]
 
