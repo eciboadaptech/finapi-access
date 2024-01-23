@@ -62,7 +62,7 @@ class BankInterface implements ModelInterface, ArrayAccess, \JsonSerializable
         'banking_interface' => '\OpenAPI\Client\Model\BankingInterface',
         'tpp_authentication_group' => '\OpenAPI\Client\Model\BankInterfaceTppAuthenticationGroup',
         'login_credentials' => '\OpenAPI\Client\Model\BankInterfaceLoginField[]',
-        'properties' => '\OpenAPI\Client\Model\BankInterfaceProperty[]',
+        // 'properties' => 'BankInterfaceProperty[]',
         'login_hint' => 'string',
         'health' => 'int',
         'last_communication_attempt' => '\DateTime',
@@ -71,7 +71,7 @@ class BankInterface implements ModelInterface, ArrayAccess, \JsonSerializable
         'is_pis_supported' => 'bool',
         'payment_capabilities' => '\OpenAPI\Client\Model\BankInterfacePaymentCapabilities',
         'payment_constraints' => '\OpenAPI\Client\Model\BankInterfacePaymentConstraints',
-        'ais_account_types' => '\OpenAPI\Client\Model\AccountType[]'
+        'ais_account_types' => 'AccountType[]'
     ];
 
     /**
