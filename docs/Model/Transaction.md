@@ -28,6 +28,7 @@ Name | Type | Description | Notes
 **type_code_swift** | **string** | SWIFT transaction type code. If no information about the SWIFT code is available, then this field will be null. | [optional]
 **sepa_purpose_code** | **string** | SEPA purpose code, according to ISO 20022 | [optional]
 **bank_transaction_code** | **string** | Bank transaction code, according to ISO 20022 | [optional]
+**bank_transaction_code_description** | **string** | Bank transaction code description, according to ISO 20022.&lt;br/&gt;The field is dynamic and can be initialized in different languages depending on the &#x60;Accept-Language&#x60; header provided within the request. Currently, only English and German are implemented, but this can get extended on demand. | [optional]
 **primanota** | **string** | Transaction primanota (bank side identification number) | [optional]
 **category** | [**\OpenAPI\Client\Model\TransactionCategory**](TransactionCategory.md) |  | [optional]
 **labels** | [**\OpenAPI\Client\Model\Label[]**](Label.md) | Array of assigned labels&lt;br/&gt; &lt;strong&gt;Type:&lt;/strong&gt; Label |
