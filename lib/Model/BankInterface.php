@@ -62,7 +62,7 @@ class BankInterface implements ModelInterface, ArrayAccess, \JsonSerializable
         'banking_interface' => '\OpenAPI\Client\Model\BankingInterface',
         'tpp_authentication_group' => '\OpenAPI\Client\Model\BankInterfaceTppAuthenticationGroup',
         'login_credentials' => '\OpenAPI\Client\Model\BankInterfaceLoginField[]',
-        'properties' => 'BankInterfaceProperty[]',
+        // 'properties' => 'BankInterfaceProperty[]',
         'login_hint' => 'string',
         'health' => 'int',
         'last_communication_attempt' => '\DateTime',
